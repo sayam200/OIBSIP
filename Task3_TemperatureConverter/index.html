@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Temperature Converter</h1>
+    <p class="muted">Celsius ⇄ Fahrenheit ⇄ Kelvin</p>
+
+    <div class="card">
+      <label>Value</label>
+      <input id="value" type="number" placeholder="Enter temperature..." />
+
+      <div class="row">
+        <div>
+          <label>From</label>
+          <select id="from">
+            <option value="C">Celsius (°C)</option>
+            <option value="F">Fahrenheit (°F)</option>
+            <option value="K">Kelvin (K)</option>
+          </select>
+        </div>
+        <button id="swap" title="Swap">↔</button>
+        <div>
+          <label>To</label>
+          <select id="to">
+            <option value="F">Fahrenheit (°F)</option>
+            <option value="C">Celsius (°C)</option>
+            <option value="K">Kelvin (K)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="convert" class="primary">Convert</button>
+        <button id="reset" class="ghost">Reset</button>
+      </div>
+
+      <div id="result" class="result">—</div>
+      <p class="muted mini">Tip: 0°C = 32°F = 273.15K</p>
+    </div>
+  </main>
+</body>
+</html>
